@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from './context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 import Head from 'next/head';
 import styles from '@/styles/Home.module.css';
 import style from '@/styles/Home.module.scss';

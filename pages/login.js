@@ -9,7 +9,7 @@ import { FaCheck } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { useAuth } from './context/AuthContext';
+import { useAuth } from '../context/AuthContext';
 
 const inter = Inter({ subsets: ["latin"] });
 
