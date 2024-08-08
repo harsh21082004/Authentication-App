@@ -1,0 +1,116 @@
+@mixin object-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+$circleSize: 155px;
+$circleSize1: 100px;
+$radius: 100px;
+$shadow: 0 0 10px 0 rgba(255, 255, 255, .35);
+$fontColor: rgb(250, 250, 250);
+
+.profilepic {
+  color: transparent;
+  transition: all .3s ease;
+  @include object-center;
+  position: relative;
+  transition: all .3s ease;
+
+  input {
+    display: none;
+  }
+
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: $circleSize;
+    height: $circleSize;
+    box-shadow: $shadow;
+    border-radius: $radius;
+    z-index: 0;
+  }
+  
+
+  .label {
+    cursor: pointer;
+    height: $circleSize;
+    width: $circleSize;
+  }
+
+  &:hover {
+    .label {
+      @include object-center;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 10000;
+      color: $fontColor;
+      transition: background-color .2s ease-in-out;
+      border-radius: $radius;
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    display: inline-flex;
+    padding: .2em;
+    height: 2em;
+  }
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2.2px solid rgb(255, 255, 255);
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  // padding: 6px;
+  color: rgb(255, 255, 255);
+}
+
+.eyeinput {
+  display: flex;
+}
+
+.eye,
+.eye {
+  padding: 0 8px;
+  margin: auto;
+  font-size: 1.3rem;
+  border: 1px solid rgb(131, 131, 131);
+  height: 37.5px;
+  width: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.eye {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2.2px solid white;
+  border-radius: 0;
+  outline: none;
+  color: rgb(91, 91, 91);
+  /* padding: 6px; */
+}
+
+
+.eye:hover,
+.eye:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px){
+  .profilepic{
+    img{
+      width: $circleSize1;
+      height: $circleSize1;
+    }
+  }
+
+  .forms{
+    span{
+      font-size: 0.8rem;
+    }
+  }
+}

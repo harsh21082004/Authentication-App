@@ -1,0 +1,197 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 550px;
+    padding: 20px !important;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    background-color: rgb(18, 44, 57);
+    max-height: 800px;
+}
+
+.main input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    outline: none;
+    width: 100%;
+    padding: 6px;
+    color: white;
+}
+
+.photo {
+    width: 350px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.form {
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button,.button1{
+    background-color: #0060de;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    height: 40px;
+}
+
+.button1{
+    height: 40px;
+}
+
+
+.button:hover,.button1:hover {
+    background-color: #00bcc0;
+    color: rgb(0, 0, 0);
+}
+
+.already p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.signusing {
+    margin: 0 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    /* Remove the default underline */
+    position: relative;
+}
+
+.loginusing {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.signusing {
+    height: 2px;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin: auto;
+}
+
+.loginusing b {
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 0 10px;
+}
+
+.rightCheck{
+    color: #35ff35;
+    font-size: 22px;
+}
+
+.wrongCheck{
+    color: rgb(255, 52, 52);
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.alert ul span{
+    display: flex;
+    align-items: center;
+}
+
+.alert ul{
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+.alert ul li{
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    .photo {
+        display: none;
+        max-width: 250px;
+        max-height: 300px;
+        margin: auto;
+    }
+
+    .image {
+        margin: auto;
+    }
+
+    .form {
+        padding: 5px;
+        margin: 0 5px;
+        /* width: 500px; */
+    }
+
+    .main {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .input{
+        max-width: 650px;
+    } */
+}
+
+.eyeinput {
+    display: flex;
+}
+
+.eye,
+.eye {
+    padding: 0 8px;
+    margin: auto;
+    font-size: 1.3rem;
+    border: 1px solid rgb(131, 131, 131);
+    height: 37.5px;
+    width: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.eye {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+    outline: none;
+    color: white;
+    /* padding: 6px; */
+}
+
+
+.eye:hover,
+.eye:hover {
+    color: rgb(255, 255, 255);
+}
+
+.input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0 !important;
+
+}
