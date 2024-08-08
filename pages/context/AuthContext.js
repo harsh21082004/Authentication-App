@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 const AuthContext = createContext();
 
-const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }) => {
   const router = useRouter();
   const [isLoggedIN, setIsLoggedIN] = useState(false);
   const [key, setKey] = useState(0);
@@ -33,5 +33,3 @@ const AuthProvider = ({ children }) => {
 };
 
 export const useAuth = () => useContext(AuthContext);
-
-export default AuthProvider;
